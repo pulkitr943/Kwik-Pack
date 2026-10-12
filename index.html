@@ -454,14 +454,14 @@ function art(o){
   return g}
 var C=[
  {n:'Perfume Boxes',alt:'Black rigid perfume box with gold foil paisley artwork, beside an open drawer box holding a perfume bottle',src:'perfume-boxes.webp',o:{w:130,d:34,hb:190,hl:60,c:'#0f4c81',foil:1}},
- {n:'Jewellery Boxes',alt:'Grey rigid sliding-drawer jewellery box with a green velvet insert holding a gold necklace set',src:'images/products/jewellery-boxes.webp',o:{open:1,w:190,d:40,hb:78,hl:44,c:'#2d2c31',in:'#efe7d8',items:[[-34,24,9,G],[34,24,9,G]]}},
- {n:'Watch Boxes',alt:'Burgundy rigid watch presentation box with gold foil, opened to show a cushioned watch holder and a drawer of cards, beside its closed lid box',src:'images/products/watch-boxes.webp',o:{open:1,w:250,d:44,hb:92,hl:46,c:'#6b4a2f',in:'#e8dfcf',items:[[0,50,20,'#2d2c31']]}},
+ {n:'Jewellery Boxes',alt:'Grey rigid sliding-drawer jewellery box with a green velvet insert holding a gold necklace set',src:'jewellery-boxes.webp',o:{open:1,w:190,d:40,hb:78,hl:44,c:'#2d2c31',in:'#efe7d8',items:[[-34,24,9,G],[34,24,9,G]]}},
+ {n:'Watch Boxes',alt:'Burgundy rigid watch presentation box with gold foil, opened to show a cushioned watch holder and a drawer of cards, beside its closed lid box',src:'watch-boxes.webp',o:{open:1,w:250,d:44,hb:92,hl:46,c:'#6b4a2f',in:'#e8dfcf',items:[[0,50,20,'#2d2c31']]}},
  {n:'Candle Boxes',alt:'Sage green rigid candle gift box with gold foil patterns, opened to show a candle jar in a fitted insert, beside its lid',src:'candle-boxes.webp',o:{w:170,d:36,hb:120,hl:60,c:'#d9ccb6',foil:1}},
- {n:'Corporate Gifting',alt:'Black rigid corporate gift box with copper foil logo and a ribbon pull, beside an open box holding a mug, leather notebook and pen',src:'images/products/corporate-gifting.webp',o:{w:270,d:44,hb:110,hl:50,c:'#2d2c31',rib:1,foil:1}},
- {n:'MDF Boxes',alt:'Hand-painted peach hinged wooden-style gift box with gold edging, open to show three jars of dry fruit, beside a matching lid panel',src:'images/products/mdf-boxes.webp',o:{w:240,d:40,hb:110,hl:52,c:'#b58a5b',wood:1}},
- {n:'Cosmetic Boxes',alt:'Yellow and purple illustrated skincare box standing beside an open box showing a serum bottle in a fitted insert',src:'images/products/cosmetic-boxes.webp',o:{open:1,w:210,d:40,hb:96,hl:50,c:'#efe8d8',in:'#0f4c81',items:[[-52,20,8,'#f6f1e7'],[0,20,8,'#f6f1e7'],[52,20,8,'#f6f1e7']]}},
- {n:'Ceramic Packaging',alt:'Open navy rigid box holding a blue ceramic plate and bowl on paper shred and tissue, beside a pink patterned lid box',src:'images/products/ceramic-packaging.webp',o:{open:1,w:230,d:46,hb:110,hl:54,c:'#d9ccb6',in:'#efe8d8',items:[[0,56,22,'#cdbfa6']]}},
- {n:'Cylindrical Boxes',alt:'Navy cylindrical rigid tube box with a removable lid and a wrapped label, standing on a desk',src:'images/products/cylindrical-boxes.webp',o:{cyl:1,w:150,hb:180,hl:70,c:'#efe8d8',lc:'#0f4c81'}}
+ {n:'Corporate Gifting',alt:'Black rigid corporate gift box with copper foil logo and a ribbon pull, beside an open box holding a mug, leather notebook and pen',src:'corporate-gifting.webp',o:{w:270,d:44,hb:110,hl:50,c:'#2d2c31',rib:1,foil:1}},
+ {n:'MDF Boxes',alt:'Hand-painted peach hinged wooden-style gift box with gold edging, open to show three jars of dry fruit, beside a matching lid panel',src:'mdf-boxes.webp',o:{w:240,d:40,hb:110,hl:52,c:'#b58a5b',wood:1}},
+ {n:'Cosmetic Boxes',alt:'Yellow and purple illustrated skincare box standing beside an open box showing a serum bottle in a fitted insert',src:'cosmetic-boxes.webp',o:{open:1,w:210,d:40,hb:96,hl:50,c:'#efe8d8',in:'#0f4c81',items:[[-52,20,8,'#f6f1e7'],[0,20,8,'#f6f1e7'],[52,20,8,'#f6f1e7']]}},
+ {n:'Ceramic Packaging',alt:'Open navy rigid box holding a blue ceramic plate and bowl on paper shred and tissue, beside a pink patterned lid box',src:'ceramic-packaging.webp',o:{open:1,w:230,d:46,hb:110,hl:54,c:'#d9ccb6',in:'#efe8d8',items:[[0,56,22,'#cdbfa6']]}},
+ {n:'Cylindrical Boxes',alt:'Navy cylindrical rigid tube box with a removable lid and a wrapped label, standing on a desk',src:'cylindrical-boxes.webp',o:{cyl:1,w:150,hb:180,hl:70,c:'#efe8d8',lc:'#0f4c81'}}
 ];
 var T=document.getElementById('pdT'),L=document.getElementById('pdL'),S=document.getElementById('pdS'),CT=document.getElementById('pdC'),root=document.getElementById('pd');
 C.forEach(function(c,i){
@@ -495,7 +495,7 @@ requestAnimationFrame(tick);
 <script>
 (function(){
 /* Founder photos: put an image address (or data URI) here once available */
-var FOUNDERS={pulkit:'images/founders/pulkit.webp',rohit:'images/founders/rohit.webp'};
+var FOUNDERS={pulkit:'pulkit.webp',rohit:'rohit.webp'};
 var RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 document.querySelectorAll('[data-founder]').forEach(function(f){var u=FOUNDERS[f.dataset.founder];if(u){var ph=f.querySelector('.ph'),i=new Image();i.src=u;i.alt='Portrait of '+f.dataset.name;ph.appendChild(i);ph.classList.add('has')}});
 var rv=document.querySelectorAll('.rv');
